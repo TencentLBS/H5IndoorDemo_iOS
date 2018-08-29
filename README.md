@@ -1,2 +1,2 @@
-# H5IndoorMapDemo_iOS
-H5 indoor map demo for iOS
+# H5IndoorDemo_iOS
+H5 indoor demo for iOS
