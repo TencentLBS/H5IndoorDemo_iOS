@@ -48,16 +48,6 @@
 
 }
 
-- (void)tencentLBSLocationManager:(TencentLBSLocationManager *)manager didFailWithError:(NSError *)error
-{
-    if(error.code >= 0 && error.code <= 4)
-    {
-        UIAlertController *controller = [UIAlertController alertControllerWithTitle:error.domain message:nil preferredStyle:UIAlertControllerStyleAlert];
-        [controller addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler: ^(UIAlertAction * _Nonnull action){}]];
-        [self presentViewController:controller animated:YES completion:nil];
-    }
-}
-
 - (void)sendMessage2Js:(TencentLBSLocation *)location Error:(NSError *)error
 {
     NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
