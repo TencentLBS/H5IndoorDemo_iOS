@@ -17,7 +17,6 @@
 		60A6125321214FC9000F1E83 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A6125221214FC9000F1E83 /* libstdc++.6.0.9.tbd */; };
 		60A6125521214FD9000F1E83 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A6125421214FD8000F1E83 /* libsqlite3.tbd */; };
 		60A61257212154DC000F1E83 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A61256212154DB000F1E83 /* TencentLBS.framework */; };
-		7BD5DDBD2137FA15005A4979 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BD5DDBC2137FA15005A4979 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,7 +239,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD5DDBD2137FA15005A4979 /* Info.plist in Resources */,
 				603D1FF8211D834D0017CE94 /* LaunchScreen.storyboard in Resources */,
 				603D1FF5211D834D0017CE94 /* Assets.xcassets in Resources */,
 				603D1FF3211D83440017CE94 /* Main.storyboard in Resources */,
