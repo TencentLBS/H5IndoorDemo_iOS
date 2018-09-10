@@ -7,13 +7,13 @@
 //
 
 #import "WebViewController.h"
-#import <TencentLBS/TencentLBSLocationManager.h>
+#import <TencentLBS/TencentLBS.h>
 
 @interface WebViewController()<TencentLBSLocationManagerDelegate>
+
 @property(strong, nonatomic) TencentLBSLocationManager *locationManager;
 @property(strong, nonatomic) UIWebView *webView;
 
-//@property NSInteger time;
 @end
 
 @implementation WebViewController
@@ -44,8 +44,7 @@
     {
         [self.navigationItem setTitle:[NSString stringWithFormat:@"%@ %@", location.name, location.buildingFloor]];
     }
-    [self sendMessage2Js:location Error :nil];
-
+    [self sendMessage2Js:location Error:nil];
 }
 
 - (void)sendMessage2Js:(TencentLBSLocation *)location Error:(NSError *)error
@@ -65,6 +64,9 @@
         [dict setObject:[NSString stringWithFormat:@"%f", location.location.speed] forKey:@"currentSpeed"];
         [dict setObject:[NSString stringWithFormat:@"%d", 0] forKey:@"errMsg"];
     }
+    
+    NSLog(@"dict: %@", dict);
+    
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dict options:0 error:nil];
     NSString *json = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
     [self.webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"processIndoorMsg(%@)", json]];
