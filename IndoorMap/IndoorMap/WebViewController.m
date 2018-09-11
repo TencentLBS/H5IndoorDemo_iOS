@@ -78,7 +78,6 @@
     [super viewDidLoad];
     [self setupWeb];
     [self setupLocationManager];
-    
 }
 
 @end
