@@ -14,7 +14,6 @@
 		603D1FF8211D834D0017CE94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 603D1FF6211D834D0017CE94 /* LaunchScreen.storyboard */; };
 		603D1FFB211D834D0017CE94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 603D1FFA211D834D0017CE94 /* main.m */; };
 		603D201F211D845D0017CE94 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 603D201E211D845D0017CE94 /* WebViewController.m */; };
-		60A6125321214FC9000F1E83 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A6125221214FC9000F1E83 /* libstdc++.6.0.9.tbd */; };
 		60A6125521214FD9000F1E83 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A6125421214FD8000F1E83 /* libsqlite3.tbd */; };
 		60A61257212154DC000F1E83 /* TencentLBS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A61256212154DB000F1E83 /* TencentLBS.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +49,6 @@
 		603D200B211D834E0017CE94 /* IndoorMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		603D201D211D84160017CE94 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		603D201E211D845D0017CE94 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		60A6125221214FC9000F1E83 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		60A6125421214FD8000F1E83 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		60A61256212154DB000F1E83 /* TencentLBS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TencentLBS.framework; path = IndoorMap/library/TencentLBS.framework; sourceTree = "<group>"; };
 		7BD5DDBC2137FA15005A4979 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 			files = (
 				60A61257212154DC000F1E83 /* TencentLBS.framework in Frameworks */,
 				60A6125521214FD9000F1E83 /* libsqlite3.tbd in Frameworks */,
-				60A6125321214FC9000F1E83 /* libstdc++.6.0.9.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +123,6 @@
 			children = (
 				60A61256212154DB000F1E83 /* TencentLBS.framework */,
 				60A6125421214FD8000F1E83 /* libsqlite3.tbd */,
-				60A6125221214FC9000F1E83 /* libstdc++.6.0.9.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
